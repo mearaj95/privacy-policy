@@ -2,92 +2,178 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Terms of Service - Index</title>
+  <title>Terms of Service</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
       line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
       background-color: #f5f5f5;
     }
-    .container {
+    
+    .wrapper {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    .sidebar {
+      width: 280px;
+      position: sticky;
+      top: 20px;
+      height: fit-content;
       background-color: white;
-      padding: 30px;
+      padding: 20px;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    h1 {
+    
+    .sidebar h3 {
+      font-size: 16px;
       color: #333;
-      border-bottom: 3px solid #007bff;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #007bff;
       padding-bottom: 10px;
     }
+    
+    .sidebar ul {
+      list-style: none;
+    }
+    
+    .sidebar li {
+      margin: 8px 0;
+    }
+    
+    .sidebar a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 14px;
+      display: block;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+    
+    .sidebar a:hover {
+      background-color: #e7f3ff;
+      color: #0056b3;
+      padding-left: 15px;
+    }
+    
+    .main-content {
+      flex: 1;
+      background-color: white;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+      border-bottom: 3px solid #007bff;
+      padding-bottom: 15px;
+    }
+    
     .last-updated {
       color: #666;
       font-style: italic;
       margin-bottom: 30px;
+      font-size: 14px;
     }
-    .index-title {
-      font-size: 18px;
-      font-weight: bold;
-      color: #333;
-      margin: 20px 0 15px 0;
-    }
-    .index-list {
-      list-style-type: none;
-      padding: 0;
-    }
-    .index-list li {
-      margin: 10px 0;
-      padding-left: 20px;
-    }
-    .index-list a {
+    
+    h2 {
       color: #007bff;
-      text-decoration: none;
-      font-weight: 500;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      scroll-margin-top: 100px;
     }
-    .index-list a:hover {
-      text-decoration: underline;
-      color: #0056b3;
+    
+    p {
+      color: #555;
+      margin-bottom: 15px;
+      text-align: justify;
     }
-    .index-list li:before {
-      content: "→ ";
-      color: #007bff;
-      margin-right: 10px;
+    
+    br {
+      line-height: 1.8;
     }
-    .section-number {
-      color: #666;
-      font-weight: bold;
+    
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column;
+      }
+      
+      .sidebar {
+        width: 100%;
+        position: static;
+      }
+      
+      .main-content {
+        padding: 20px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Terms of Service - Index</h1>
-    <div class="last-updated">Last updated: June 2026</div>
+  <div class="wrapper">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <h3>📋 Table of Contents</h3>
+      <ul>
+        <li><a href="#section1">1. Acceptance of Terms</a></li>
+        <li><a href="#section2">2. Use of the App</a></li>
+        <li><a href="#section3">3. User Responsibilities</a></li>
+        <li><a href="#section4">4. Prohibited Activities</a></li>
+        <li><a href="#section5">5. Content</a></li>
+        <li><a href="#section6">6. Limitation of Liability</a></li>
+        <li><a href="#section7">7. Changes to Terms</a></li>
+        <li><a href="#section8">8. Contact</a></li>
+      </ul>
+    </aside>
 
-    <div class="index-title">Quick Navigation</div>
-    <ul class="index-list">
-      <li><span class="section-number">1.</span> <a href="#acceptance">Acceptance of Terms</a></li>
-      <li><span class="section-number">2.</span> <a href="#use">Use of the App</a></li>
-      <li><span class="section-number">3.</span> <a href="#responsibilities">User Responsibilities</a></li>
-      <li><span class="section-number">4.</span> <a href="#prohibited">Prohibited Activities</a></li>
-      <li><span class="section-number">5.</span> <a href="#content">Content</a></li>
-      <li><span class="section-number">6.</span> <a href="#liability">Limitation of Liability</a></li>
-      <li><span class="section-number">7.</span> <a href="#changes">Changes to Terms</a></li>
-      <li><span class="section-number">8.</span> <a href="#contact">Contact</a></li>
-    </ul>
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>Terms of Service</h1>
+      <p class="last-updated">Last updated: June 2026</p>
 
-    <hr style="margin: 40px 0; border: none; border-top: 2px solid #eee;">
+      <h2 id="section1">1. Acceptance of Terms</h2>
+      <p>By using this application, you agree to these Terms of Service. If you do not agree, please do not use the app.</p>
 
-    <div style="margin-top: 40px;">
-      <div style="background-color: #e7f3ff; padding: 15px; border-radius: 5px; border-left: 4px solid #007bff;">
-        <strong>Note:</strong> This is an index page for easy navigation of the Terms of Service. Click on any term above to jump to the full terms document.
-      </div>
-    </div>
+      <h2 id="section2">2. Use of the App</h2>
+      <p>This app is provided for personal and informational use only. You agree not to misuse the app or its services.</p>
+
+      <h2 id="section3">3. User Responsibilities</h2>
+      <p>You are responsible for any activity performed through your account or access.</p>
+
+      <h2 id="section4">4. Prohibited Activities</h2>
+      <p>You agree not to:
+        <br>- Use the app for illegal activities  
+        <br>- Attempt to hack, modify, or damage the system  
+        <br>- Spam or abuse services  
+      </p>
+
+      <h2 id="section5">5. Content</h2>
+      <p>We are not responsible for user-generated content or third-party content.</p>
+
+      <h2 id="section6">6. Limitation of Liability</h2>
+      <p>We are not liable for any damages or losses caused by using this app.</p>
+
+      <h2 id="section7">7. Changes to Terms</h2>
+      <p>We may update these Terms at any time without prior notice.</p>
+
+      <h2 id="section8">8. Contact</h2>
+      <p>If you have any questions, contact us at: your-email@example.com</p>
+    </main>
   </div>
 </body>
 </html>
